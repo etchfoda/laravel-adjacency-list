@@ -106,6 +106,9 @@ trait IsOfDescendantsRelation
      */
     protected function buildDictionary(Collection $results)
     {
+        if($results->isEmpty())
+            return [];
+        
         $dictionary = [];
 
         $paths = explode(
