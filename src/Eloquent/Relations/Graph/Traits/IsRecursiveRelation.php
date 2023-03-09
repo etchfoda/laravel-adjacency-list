@@ -130,9 +130,7 @@ trait IsRecursiveRelation
                 $query->getGrammar()->wrap(
                     $query->getModel()->getExpressionName()
                 ),
-                $expression->getValue(
-                    $query->getGrammar()
-                )
+                $expression->getValue(),
             )
         );
     }
